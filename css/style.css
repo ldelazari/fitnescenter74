@@ -1,0 +1,432 @@
+html {
+   box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.center {
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Comfortaa', cursive;
+    min-width: 1200px;
+    background-color: white;
+}
+
+.list-reset {
+    margin: 0;
+    padding: 0;
+    list-style: none;  /*отменяет маркеры*/
+}
+
+.btn-reset {
+   padding: 0;
+   border: none;
+   background-color: transparent;   /*устанавливает прозрачный фон*/
+   cursor: pointer; /*чтоб было видно курсор, что можно кликать*/
+}
+
+.flex {
+    display: flex;
+}
+
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;  /*auto чтоб центрировался по горизонтали*/
+}
+
+.section-title {
+    margin: 0;
+    margin-bottom: 40px;
+}
+
+.section-descr {
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.section-offset {
+    padding-top: 87px;
+    padding-bottom: 90px;
+}
+
+.section-offset1 {
+    padding-top: 87px;
+    padding-bottom: 10px;
+}
+
+/*header*/
+.header {
+    padding: 36px 0;
+}
+
+.header-container {
+    align-items: center;
+}
+
+.header-logo {
+    margin-right: auto;  /* распределяет по горизонтали, прижав меню навигации вправо*/
+    width: 30%;
+    height: 30%;
+}
+
+.header-nav {
+    margin-right: 52px;   /*расстояние между навигацией и кнопкой*/
+}
+
+.header-list-item:not(:last-child) {
+    margin-right: 52px;
+}
+.header-list-item1:hover {
+    font-size: 105%;
+}
+.header-list-item2:hover {
+    font-size: 105%;
+}
+.header-list-item3:hover {
+    font-size: 105%;
+}
+.header-list-item4:hover {
+    font-size: 105%;
+}
+.header-list-item5:hover {
+    font-size: 105%;
+}
+.header-list-item6:hover {
+    font-size: 105%;
+}
+
+/*hero*/
+.hero {
+    padding: 100px 0;
+    background-image: url(../img/achievement-bg.jpg);
+}
+
+.hero1 {
+    padding: 100px 0;
+    background-image: url(../img/os.png);
+}
+.hero-content {
+    max-width: 50%;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.hero-title {
+    margin: 0;
+    margin-bottom: 25px;
+}
+
+.hero-descr {
+    margin: 0;
+    margin-bottom: 34px;
+    word-spacing: 3px;
+}
+
+.hero-btn {
+    margin-bottom: 14px;
+    color: white;
+}
+
+/*services*/
+.services-title {   /*заголовок*/
+    text-align: center;
+}
+
+.services-descr {   /*параграф-абзац*/
+    text-align: center;
+}
+
+.services-item {
+    flex-direction: column; /*меняем главную ось*/
+    align-items: center;    /*отцентруем*/
+    padding: 15px;
+    width: 270px;
+    font-size: 90%;
+    outline: 2px solid #1c1c1c; /*для того, чтобы мы могли визуально видеть границы*/
+}
+
+.services-item:hover {
+    box-shadow: 0 0 10px #1c1c1c;
+}
+
+/*далее выставим отступ между нашими карточками в services, 
+но нужно учитывать, что карточек может стать больше поэтому зададим справа отступ 30, 
+но у каждой четвертой будем обнулять*/
+
+.services-item:not(:nth-child(4n)) {
+    margin-right: 30px;
+}
+
+.services-item-icon {   /*отступ снизу иконки*/
+    margin-bottom: 25px;
+    width: 70%;
+    height: 70%;
+}
+
+.services-item-icon1 {   /*отступ снизу иконки*/
+    margin-top: 25px;
+    border-radius: 20px;
+}
+
+.services-item-title {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.services-item-descr {
+    margin: 0;
+    text-align: center;  /*текст по центру*/
+}
+
+/*Article*/
+.articles-list {
+    flex-wrap: wrap;
+}
+.articles-item {
+    width: 570px;
+    margin-bottom: 30px;
+    outline: 1px solid coral; /*для того, чтобы мы могли визуально видеть границы*/
+}
+
+.articles-item:not(:nth-child(2n)) {
+    margin-right: 30px;
+}
+
+.blog preview-image {
+    object-fit: cover;   /*чтобы картинка занимала всё место для нее отведенное, 
+    даже если картинка будет неправильной пропорции*/
+}
+
+.blog-preview-text {
+    padding: 30px;
+}
+
+.blog-preview-time {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.blog-preview-title {
+    margin: 0;
+    margin-bottom: 15px;
+}
+
+.blog-preview-descr {
+    margin: 0;
+}
+
+/*clients*/
+.clients { 
+    background-image: url(../img/bg.jpg);
+}
+.clients-title {
+    color: white;
+    text-align: center; 
+}
+
+.clients-title1 {
+    text-align: center; 
+}
+
+.clients-item {
+    background-color: white;
+    flex-direction: column;
+    width: 370px;
+    padding: 50px 36px;
+    padding-bottom: 30px;
+    box-shadow: 0 0 10px #1c1c1c;
+    outline: 2px solid #1c1c1c; /*для того, чтобы мы могли визуально видеть границы*/
+}
+
+.clients-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.clients-item-descr {
+    margin: 0;
+    margin-bottom: 30px;
+    word-spacing: 3px;
+}
+
+.clients-user {
+    margin-top: auto;
+}
+
+.tren {
+    width: 65%;
+    height: 65%;
+}
+
+.clients-avatar {
+    flex-shrink: 0;
+    width: 70px;
+    margin-right: 17px;
+    border: 1px solid #1c1c1c;
+    border-radius: 120px;
+}
+.clients-name {
+    margin-bottom: 5px;
+}
+
+/*contacts*/
+.contacts-address {
+    font-style: normal;
+}
+
+.contacts-item {
+    flex-direction: column;
+    width: 370px;
+    /*outline: 1px solid coral; */
+}
+
+.contacts-item:not(:nth-child(3n)) {
+    margin-right: 30px;
+}
+
+.contacts-item-caption {
+    margin-bottom: 30px;
+}
+
+.contacts-item-text {
+    margin: 0;
+}
+
+.contacts-item-link:not(:last-childs) {
+    margin-bottom: 5px;
+}
+.contacts-title {
+    text-align: center;
+}
+
+/*footer*/
+.footer {
+    padding: 42px 0;
+}
+
+.footer1 {
+    padding: 42px 0;
+}
+
+.footer-container {
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-left,
+.footer-right {
+    align-items: center;
+}
+
+.footer-logo {
+    margin-right: 25px;
+    width: 20%;
+    height: 20%;
+}
+
+.footer-item:not(:last-child) {
+    margin-right: 28px;
+}
+
+input {
+    width: 400px;
+    height: 50px;
+    border-radius: 100px;
+    border: 2px solid #1c1c1c;
+    font-family:'Fredoka', sans-serif;
+    font-size: 110%;
+    padding-left: 10px;
+}
+
+input:hover {
+    box-shadow: 0 0 10px white;
+    transition: .3s;
+}
+
+.suc {
+    background-color: yellow;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0px;
+    box-shadow: 0 0 10px yellow;
+    color: black;
+}
+
+.suc1 {
+    padding: 20px;
+    padding-left: 180px;
+}
+
+.suc11 {
+    background-color: yellow;
+    width: 300px;
+    height: 50px;
+    border-radius: 100px;
+    border: 0px;
+    box-shadow: 0 0 10px #1c1c1c;
+    color: black;
+}
+
+.suc:hover {
+    width: 320px;
+    height: 60px;
+    transition: .5s all ease;
+    font-size: 110%;
+}
+
+.suc11:hover {
+    width: 320px;
+    height: 60px;
+    transition: .5s all ease;
+    font-size: 110%;
+}
+.single-gallery-image {
+    margin-top: 30px;
+    background-repeat: no-repeat !important;
+    background-position: center center !important;
+    background-size: cover !important;
+    height: 200px;
+    border-radius: 20px;
+    margin-left: 20px;
+  }
+
+  .col-md-4 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 33.333333%;
+    flex: 0 0 33.333333%;
+    max-width: 33.333333%;
+}
+
+.col-md-6 {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
